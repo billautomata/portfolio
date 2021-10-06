@@ -72,14 +72,6 @@ export default function Sections () {
             <Grid container item 
               justifyContent='center' alignItems='flex-start'
               xs={11} sm={11} md={11} lg={5} xl={5}
-              onClick={()=>{
-                if (project.hash !== undefined) {
-                  window.location.hash = project.hash
-                  setTimeout(()=>{window.scrollTo(0,0)},0)
-                } else {
-                  window.open(project.link)
-                }                
-              }} 
               style={{
                 backgroundColor: '#000',
                 borderRadius: '128px', 
@@ -88,7 +80,6 @@ export default function Sections () {
                 borderTopRightRadius: '16px',
                 border: '1px solid #777',
                 color: '#FFF',
-                cursor: 'pointer',
                 marginBottom: 24,
                 overflow: 'hidden',
                 paddingBottom: 24, 
